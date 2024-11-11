@@ -1,7 +1,7 @@
 ---
-- name: Run uptime command on target hosts
+- name: Run basic command on local hosts
   hosts: localhosts               
   become: yes               
   tasks:
     - name: Check system uptime
-      shell: uptime
+      shell: ls

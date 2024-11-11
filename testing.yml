@@ -3,5 +3,5 @@
   hosts: localhosts               
   become: yes               
   tasks:
-    - name: Check system uptime
+    - name: Test command
       shell: ls

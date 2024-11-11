@@ -1,6 +1,6 @@
 ---
 - name: Run basic command on local hosts
-  hosts: localhosts               
+  hosts: localhost               
   become: yes               
   tasks:
     - name: Test command

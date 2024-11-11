@@ -1,8 +1,7 @@
 ---
 - name: Run uptime command on target hosts
-  hosts: all               
+  hosts: localhosts               
   become: yes               
   tasks:
     - name: Check system uptime
-      ansible.builtin.command:
-        cmd: uptime
+      shell: uptime

@@ -5,3 +5,8 @@
   tasks:
     - name: Test command
       shell: pwd
+      register: result
+ 
+    - name: Show the output
+      debug:
+        msg: "{{ result.stdout }}"

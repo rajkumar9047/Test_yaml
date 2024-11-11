@@ -4,4 +4,4 @@
   become: yes               
   tasks:
     - name: Test command
-      shell: ls
+      shell: pwd
